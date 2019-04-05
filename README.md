@@ -1,1 +1,1 @@
-# s3m.github.io
+https://s3m.stream
