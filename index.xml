@@ -6,10 +6,21 @@
     <description>Recent content on s3m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2020 13:37:16 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 17:31:52 +0200</lastBuildDate>
     
 	<atom:link href="https://s3m.stream/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install</title>
+      <link>https://s3m.stream/post/install/</link>
+      <pubDate>Tue, 01 Sep 2020 17:31:52 +0200</pubDate>
+      
+      <guid>https://s3m.stream/post/install/</guid>
+      <description>To install:
+cargo install s3m   To install cargo curl https://sh.rustup.rs -sSf | sh
+ </description>
+    </item>
     
     <item>
       <title>How it works</title>

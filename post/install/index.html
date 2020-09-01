@@ -8,7 +8,7 @@
 		<meta name="description" content="A &#34;fault-tolerant&#34; command line tool for storing streams of data in s3 buckets">
 		<meta name="keywords" content="s3, stream, upload, resume">
 		<meta name="generator" content="Hugo 0.74.3" />
-		<title>Delete Objects &middot; s3m</title>
+		<title>Install &middot; s3m</title>
         <link rel="shortcut icon" href="https://s3m.stream/images/favicon.ico">
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://s3m.stream/images/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://s3m.stream/images/apple-touch-icon-114x114.png" />
@@ -66,35 +66,29 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>Delete Objects</h1>
+                    <h1>Install</h1>
                     <h2 class="headline">
                     <br>
                     
                     </h2>
                 </header>
                 <section id="post-body">
-                    <p>To remove an object:</p>
-<pre><code>s3m rm &lt;s3 provider&gt;/&lt;bucket&gt;/object
-</code></pre>
-<p>To abort a multipart upload:</p>
-<pre><code>s3m rm &lt;s3 provider&gt;/&lt;bucket&gt; -a &lt;UploadId&gt;
+                    <p>To install:</p>
+<pre><code>cargo install s3m
 </code></pre>
 <blockquote>
-<p>to get the upload ID you could use <code>s3m ls &lt;s3 provider&gt;/&lt;bucket&gt; -m</code></p>
+<p>To install cargo <code>curl https://sh.rustup.rs -sSf | sh</code></p>
 </blockquote>
-<p>For example to abort all multipart uploads:</p>
-<pre><code>s3m ls -m &lt;s3&gt;/&lt;bucket&gt; | awk '{system(&quot;s3m rm &lt;s3&gt;/&lt;bucket&gt;/&quot;$5&quot; -a &quot;$4);}'
-</code></pre>
 
                 </section>
             </article>
             <footer id="post-meta" class="clearfix">
-                 <a href="https://github.com/s3m/public/edit/master/post/rm.md" target="_blank">Suggest edit ✍️</a>
+                 <a href="https://github.com/s3m/public/edit/master/post/install.md" target="_blank">Suggest edit ✍️</a>
 
                 
                     
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fs3m.stream%2fpost%2frm%2f - Delete%20Objects "><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fs3m.stream%2fpost%2finstall%2f - Install "><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
