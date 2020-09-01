@@ -85,10 +85,10 @@ be changed using the option <code>-b</code>.</p>
 on your needs.</p>
 <p>For example, if you would like to upload 5TB (the current max object size) you
 will need a buffer size of <strong>512MB</strong>:</p>
-<pre><code>s3m /path/to/5TB.file &lt;s3&gt;/&lt;bucket&gt;/file -b 536870912
+<pre><code>s3m /path_to/5TB.file &lt;s3&gt;/&lt;bucket&gt;/file -b 536870912
 </code></pre>
 <p>If using buffer of <strong>30MB</strong> you could upload up to 300GB:</p>
-<pre><code>s3m /path/to/5TB.file &lt;s3&gt;/&lt;bucket&gt;/file -b 31457280
+<pre><code>s3m /path_to/5TB.file &lt;s3&gt;/&lt;bucket&gt;/file -b 31457280
 </code></pre>
 <p>The current limits for AWS S3 are: (<a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/qfacts.html">https://docs.aws.amazon.com/AmazonS3/latest/dev/qfacts.html</a>)</p>
 <ul>
@@ -100,7 +100,7 @@ will need a buffer size of <strong>512MB</strong>:</p>
 <pre><code>524288000000     / 10000  = 52428800 (50MB buffer size)
 (500GB in bytes) / (max number of parts)
 </code></pre><p>The buffer size to use <strong>50MB</strong>:</p>
-<pre><code>s3m /path/to/5TB.file &lt;s3&gt;/&lt;bucket&gt;/file -b 52428800
+<pre><code>s3m /path_to/5TB.file &lt;s3&gt;/&lt;bucket&gt;/file -b 52428800
 </code></pre>
 <p>When the size of the input is known in advance, a checksum of the file is
 created before unloading the file in order to keep track of the uploaded
